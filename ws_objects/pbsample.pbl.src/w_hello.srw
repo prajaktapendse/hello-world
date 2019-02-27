@@ -40,7 +40,7 @@ end on
 type st_hello from statictext within w_hello
 integer x = 530
 integer y = 228
-integer width = 416
+integer width = 544
 integer height = 64
 integer textsize = -10
 integer weight = 700
@@ -50,8 +50,8 @@ fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 long textcolor = 33554432
 long backcolor = 67108864
-string text = "Hello World!!!"
-borderstyle borderstyle = StyleRaised!
+string text = "Hello World!!! 123"
+borderstyle borderstyle = styleraised!
 boolean focusrectangle = false
 end type
 
