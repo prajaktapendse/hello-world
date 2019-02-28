@@ -74,7 +74,7 @@ fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 long textcolor = 33554432
 long backcolor = 67108864
-string text = "Hello World!!!"
+string text = "Hello World"
 borderstyle borderstyle = styleraised!
 boolean focusrectangle = false
 end type
