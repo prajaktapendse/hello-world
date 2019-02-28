@@ -2,6 +2,8 @@
 forward
 global type w_members from window
 end type
+type st_sample from statictext within w_members
+end type
 type st_members from statictext within w_members
 end type
 type cb_back from commandbutton within w_members
@@ -20,22 +22,43 @@ boolean resizable = true
 long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
+st_sample st_sample
 st_members st_members
 cb_back cb_back
 end type
 global w_members w_members
 
 on w_members.create
+this.st_sample=create st_sample
 this.st_members=create st_members
 this.cb_back=create cb_back
-this.Control[]={this.st_members,&
+this.Control[]={this.st_sample,&
+this.st_members,&
 this.cb_back}
 end on
 
 on w_members.destroy
+destroy(this.st_sample)
 destroy(this.st_members)
 destroy(this.cb_back)
 end on
+
+type st_sample from statictext within w_members
+integer x = 526
+integer y = 420
+integer width = 667
+integer height = 64
+integer textsize = -10
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Tahoma"
+long textcolor = 33554432
+long backcolor = 67108864
+string text = "This is just a sample text"
+boolean focusrectangle = false
+end type
 
 type st_members from statictext within w_members
 integer x = 421
