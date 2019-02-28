@@ -64,7 +64,7 @@ end event
 type st_welcome from statictext within w_team
 integer x = 530
 integer y = 248
-integer width = 731
+integer width = 786
 integer height = 160
 integer textsize = -12
 integer weight = 700
