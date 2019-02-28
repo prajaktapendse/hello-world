@@ -56,7 +56,7 @@ fontfamily fontfamily = swiss!
 string facename = "Tahoma"
 long textcolor = 33554432
 long backcolor = 67108864
-string text = "This is just a sample text"
+string text = "This is a sample text"
 boolean focusrectangle = false
 end type
 
